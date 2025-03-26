@@ -1,0 +1,177 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>BookMyShow Header</title>  
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">  
+    <link rel ="stylesheet" href="https://fontawesome.com/icons">
+
+</head>  
+<body>  
+    <header>  
+        <div class="logo">  
+            <img src="book my show 2 logo.jpg" alt="BookMyShow Logo">  
+        </div>  
+        <div class="search-bar">  
+            <input type="text" placeholder="Search for Movies, Events, Plays, Sports and Activities">  
+        </div>  
+        <nav>  
+            <ul class="nav-links">  
+                <li>Movies</li>  
+                <li>Stream</li>  
+                <li>Events</li>  
+                <li>Plays</li>  
+                <li>Sports</li>  
+                <li>Activities</li>  
+            </ul>  
+        </nav>  
+        <div class="location">  
+            <span>Pune</span>  
+        </div>  
+        <div class="sign-in">  
+            <button>Sign in</button>  
+        </div>  
+    </header>  
+    
+    <div class="navbar">  
+        <span>Movies</span>  
+        <span>Stream</span>  
+        <span>Events</span>  
+        <span>Plays</span>  
+        <span>Sports</span>  
+        <span>ListShow</span>  
+        <span>Corporates</span>  
+        <span>Offers</span>  
+        <span>GiftCards</span>  
+    </div>  
+
+    <section class="container">  
+        <!-- Swiper Slider -->  
+        <div class="swiper">  
+            <div class="swiper-wrapper">  
+                <div class="swiper-slide"><img src="WhatsApp Image 2025-03-25 at 19.12.30_09008974.jpg" alt="slide 1"></div>  
+                <div class="swiper-slide"><img src="WhatsApp Image 2025-03-25 at 19.12.30_d7143fc9.jpg" alt="slide 2"></div>  
+                <div class="swiper-slide"><img src="WhatsApp Image 2025-03-25 at 19.12.31_9c070797.jpg" alt="slide 3"></div>  
+                <div class="swiper-slide"><img src="WhatsApp Image 2025-03-25 at 19.12.31_ad263fe0.jpg" alt="slide 4"></div>  
+            </div>  
+            <!-- Add Pagination -->  
+            <div class="swiper-pagination"></div>  
+            <!-- Add Navigation -->  
+            <div class="swiper-button-prev"></div>  
+            <div class="swiper-button-next"></div>  
+        </div>  
+    </section>  
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>  
+    <script>  
+        // Swiper Initialization  
+        const swiper = new Swiper('.swiper', {  
+            loop: true,  
+            pagination: {  
+                el: '.swiper-pagination',  
+                clickable: true,  
+            },  
+            navigation: {  
+                nextEl: '.swiper-button-next',  
+                prevEl: '.swiper-button-prev',  
+            },  
+        });  
+
+       
+        
+    </script> 
+     <div class="movies-section">
+        <h2>Recommended Movies</h2>
+        <div class="movie-grid">
+            <div class="movie-card">
+                <img src="IMG-20250325-WA0001.jpg" alt="Movie 1">
+                <h3>Chhaava</h3>
+                <p>Action/historical</p>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="IMG-20250325-WA0027.jpg" alt="Movie 2">
+                <h3>Sikandar</h3>
+                <p>Action/Drama</p>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="black.jpg" alt="Movie 3">
+                <h3>Black Panther</h3>
+                <p>Action/Adventure</p>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="joke.jpg" alt="Movie 4">
+                <h3>Joker</h3>
+                <p>Drama</p>
+                <button class="book-now">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="stream-banner">
+        <div class="stream-content">
+            <div class="stream-logo">STREAM</div>
+            <div class="stream-text">Endless Entertainment Anytime. Anywhere!</div>
+        </div>
+    </div>
+    <div class="events-section">  
+        <h2>The Best Of Live Events</h2>  
+        <div class="events-grid">  
+            <div class="event-card">  
+                <h3>Comedy Shows</h3>  
+                <p>60+ Events</p>  
+            </div>  
+            <div class="event-card">  
+                <h3>Amusement Park</h3>  
+                <p>10+ Events</p>  
+            </div>  
+            <div class="event-card">  
+                <h3>Theatre Shows</h3>  
+                <p>40+ Events</p>  
+            </div>  
+            <div class="event-card">  
+                <h3>Kids</h3>  
+                <p>10 Events</p>  
+            </div>  
+            <div class="event-card">  
+                <h3>Adventure & Fun</h3>  
+                <p>40+ Events</p>  
+            </div>  
+        </div>  
+    </div>  
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MOVIES BY GENRE</h3>
+                <p>Action Movies</p>
+                <p>Comedy Movies</p>
+                <p>Drama Movies</p>
+                <p>Sci-Fi Movies</p>
+            </div>
+            <div class="footer-section">
+                <h3>MOVIES BY LANGUAGE</h3>
+                <p>Hindi Movies</p>
+                <p>English Movies</p>
+                <p>Telugu Movies</p>
+                <p>Tamil Movies</p>
+            </div>
+            <div class="footer-section">
+                <h3>HELP & SUPPORT</h3>
+                <p>Contact Us</p>
+                <p>About Us</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BookMyShow. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+  
+    
+</body>  
+</html>  
